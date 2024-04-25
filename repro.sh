@@ -6,9 +6,6 @@ ln -sf ecds.orig.yaml ecds.yaml
 
 envoy -l debug -c ./envoy.yaml &
 
-# Start nc in background to keep curl connection open.
-#nc -l 8081 &
-
 sleep 2
 
 (
